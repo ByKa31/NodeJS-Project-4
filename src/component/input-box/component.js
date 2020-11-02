@@ -11,6 +11,34 @@ export default class InputBox extends Component{
        
         return {input};
     }
+    
+    onRender(){
+    	this.element.querySelector('.submit-button').addEventListener('click', (event)=>{
+            console.log(event)
+            //document.getElementById('file-reader-1').innerHTML = "<b>" + this.input.value + "</b>"; 
+            document.getElementById('file-reader-1').innerHTML = "<b>HELLO</b>"; // OK
+           
+    });
+    // onRender(){
+//     	this.element.querySelector('.submit-button').addEventListener('click', (event)=>{
+//             console.log(event)
+//             //document.getElementById('file-reader-1').innerHTML = "<b>" + this.input.value + "</b>"; 
+//             document.getElementById('file-reader-1').innerHTML = viewModel.input + "<b>HELLO</b>"; // OK
+//            
+//         });
+        
+//         this.element.querySelector('.submit-button').addEventListener('click', (event)=>{
+//             console.log(event)
+//             document.getElementById('file-reader-1').innerHTML = "<b>HELLO</b>";
+//         });
+    	// this.element.querySelector('.submit-button').addEventListener('click', (event)=>{
+//             console.log(event)
+//             document.getElementById('file-reader-1').filecontent = "<b>" + document.getElementById('input-box').value + "</b>";
+//         });
+        
+    }
+    
+    
 }
 
 InputBox.twig = twig;
